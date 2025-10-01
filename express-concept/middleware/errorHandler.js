@@ -10,7 +10,7 @@ class APIError extends Error {
 
 //it catch error if happen in any function
 
-const asyncHandler = (fn )= (req,res,next) => {
+const asyncHandler = (fn )=> (req,res,next) => {
     Promise.resolve(fn(req,res,next)).catch(next);
 };
 
