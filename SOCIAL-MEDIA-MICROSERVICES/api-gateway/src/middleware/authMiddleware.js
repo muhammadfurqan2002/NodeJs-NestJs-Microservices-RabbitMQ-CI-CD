@@ -14,10 +14,11 @@ const validateToken = async (req, res, next) => {
             logger.warn("Invalid token!");
             return res.status(401).json({ success: false, message: "Invalid Token!" });
         }
+
+        req.user = user;
+        next();
     })
-    req.user=user;
-    next();
 }
 
 
-module.exports=validateToken;
+module.exports = validateToken;
