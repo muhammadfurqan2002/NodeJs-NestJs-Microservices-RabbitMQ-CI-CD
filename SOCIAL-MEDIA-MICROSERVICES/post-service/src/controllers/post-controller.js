@@ -1,11 +1,12 @@
 const Post = require("../models/post");
 const logger = require("../utils/logger");
+const { publishEvent } = require("../utils/rabbitmq");
 const { validatingCreatePost } = require("../utils/validation");
 
 
 async function invalidatePostCache(req, input) {
-    
-    const cacheKey=`post:${input}`;
+
+    const cacheKey = `post:${input}`;
     await req.redisClient.del(cacheKey);
     const keys = await req.redisClient.keys("posts:*");
     if (keys.length > 0) {
@@ -105,7 +106,7 @@ const getPost = async (req, res) => {
                 message: "Post not found"
             })
         }
-        await req.redisClient.setex(cacheKey,300,JSON.stringify(singlePost));
+        await req.redisClient.setex(cacheKey, 300, JSON.stringify(singlePost));
         res.json(singlePost);
     } catch (e) {
         logger.error("Error getting post", e);
@@ -118,16 +119,22 @@ const getPost = async (req, res) => {
 const deletePost = async (req, res) => {
     logger.info("Delete post endpoint hit");
     try {
-        const post=await Post.findOneAndDelete({_id:req.params.id,user:req.user.userId});
+        const post = await Post.findOneAndDelete({ _id: req.params.id, user: req.user.userId });
         if (!post) {
             return res.status(404).json({
                 success: false,
                 message: "Post not found"
             })
         }
-        await invalidatePostCache(req,req.params.id)
+        // publish post delete method
+        await publishEvent("post.deleted", {
+            postId: post._id.toString(),
+            userId: req.user.userId,
+            mediaId: post.mediaIds
+        })
+        await invalidatePostCache(req, req.params.id)
         res.json({
-            message:"Post deleted successfully"
+            message: "Post deleted successfully"
         })
     } catch (e) {
         logger.error("Error deleting post", e);

@@ -97,3 +97,23 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-10-09T11:11:21.769Z"}
 {"email":"john@gmail.com","level":"info","message":"Request Body:","password":"pakistani1","service":"identity-service","timestamp":"2025-10-09T11:11:21.771Z"}
 {"level":"info","message":"Login Endpoint hit...","service":"identity-service","timestamp":"2025-10-09T11:11:21.777Z"}
+{"level":"info","message":"Identity Service running on port 3001","service":"identity-service","timestamp":"2025-10-10T13:19:30.969Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-10-10T13:19:31.009Z"}
+{"level":"info","message":"Identity Service running on port 3001","service":"identity-service","timestamp":"2025-10-10T13:20:02.670Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-10-10T13:20:02.705Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-10-10T14:21:14.298Z"}
+{"email":"john@gmail.com","level":"info","message":"Request Body:","password":"pakistani1","service":"identity-service","timestamp":"2025-10-10T14:21:14.302Z"}
+{"level":"info","message":"Login Endpoint hit...","service":"identity-service","timestamp":"2025-10-10T14:21:14.314Z"}
+{"level":"info","message":"Identity Service running on port 3001","service":"identity-service","timestamp":"2025-10-14T07:05:46.393Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-10-14T07:05:46.456Z"}
+{"level":"info","message":"Identity Service running on port 3001","service":"identity-service","timestamp":"2025-10-14T07:05:49.737Z"}
+{"level":"info","message":"Connected to MongoDB","service":"identity-service","timestamp":"2025-10-14T07:05:49.781Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-10-14T07:08:11.319Z"}
+{"email":"john@gmail.com","level":"info","message":"Request Body:","password":"pakistani1","service":"identity-service","timestamp":"2025-10-14T07:08:11.321Z"}
+{"level":"info","message":"Login Endpoint hit...","service":"identity-service","timestamp":"2025-10-14T07:08:11.334Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-10-14T09:23:08.861Z"}
+{"email":"john@gmail.com","level":"info","message":"Request Body:","password":"pakistani1","service":"identity-service","timestamp":"2025-10-14T09:23:08.866Z"}
+{"level":"info","message":"Login Endpoint hit...","service":"identity-service","timestamp":"2025-10-14T09:23:08.875Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"identity-service","timestamp":"2025-10-14T16:33:45.113Z"}
+{"email":"john@gmail.com","level":"info","message":"Request Body:","password":"pakistani1","service":"identity-service","timestamp":"2025-10-14T16:33:45.117Z"}
+{"level":"info","message":"Login Endpoint hit...","service":"identity-service","timestamp":"2025-10-14T16:33:45.123Z"}

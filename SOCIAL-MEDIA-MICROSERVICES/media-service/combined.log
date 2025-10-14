@@ -2,3 +2,213 @@
 {"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-09T15:17:06.619Z"}
 {"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-09T15:17:26.336Z"}
 {"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-09T15:17:26.378Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T13:20:19.951Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T13:20:19.987Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T13:24:49.330Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T13:24:49.353Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T13:25:22.464Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T13:25:22.484Z"}
+{"level":"info","message":"Received GET request to /api/media/upload","service":"media-service","timestamp":"2025-10-10T14:26:13.382Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-10T14:26:13.385Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-10T14:26:24.575Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-10T14:26:24.577Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-10T14:26:24.620Z"}
+{"level":"info","message":"File Details: undefined, typeundefined","service":"media-service","timestamp":"2025-10-10T14:26:24.621Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-10T14:26:24.624Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: c4uxc4tercmw6qzbv47j","service":"media-service","timestamp":"2025-10-10T14:26:29.267Z"}
+{"_message":"Media validation failed","errors":{"mimeType":{"kind":"required","message":"Path `mimeType` is required.","name":"ValidatorError","path":"mimeType","properties":{"message":"Path `mimeType` is required.","path":"mimeType","type":"required"}},"originalName":{"kind":"required","message":"Path `originalName` is required.","name":"ValidatorError","path":"originalName","properties":{"message":"Path `originalName` is required.","path":"originalName","type":"required"}},"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"level":"error","message":"Error uploading media Media validation failed: originalName: Path `originalName` is required., mimeType: Path `mimeType` is required., userId: Path `userId` is required.","service":"media-service","stack":"ValidationError: Media validation failed: originalName: Path `originalName` is required., mimeType: Path `mimeType` is required., userId: Path `userId` is required.\n    at Document.invalidate (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3362:32)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3123:17\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-10-10T14:26:29.335Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-10T14:30:06.999Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-10T14:30:07.000Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-10T14:30:07.018Z"}
+{"level":"info","message":"File Details: undefined, typeundefined","service":"media-service","timestamp":"2025-10-10T14:30:07.019Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-10T14:30:07.019Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: klyba6ryga3dh3xkzflx","service":"media-service","timestamp":"2025-10-10T14:30:16.111Z"}
+{"_message":"Media validation failed","errors":{"mimeType":{"kind":"required","message":"Path `mimeType` is required.","name":"ValidatorError","path":"mimeType","properties":{"message":"Path `mimeType` is required.","path":"mimeType","type":"required"}},"originalName":{"kind":"required","message":"Path `originalName` is required.","name":"ValidatorError","path":"originalName","properties":{"message":"Path `originalName` is required.","path":"originalName","type":"required"}},"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"level":"error","message":"Error uploading media Media validation failed: originalName: Path `originalName` is required., mimeType: Path `mimeType` is required., userId: Path `userId` is required.","service":"media-service","stack":"ValidationError: Media validation failed: originalName: Path `originalName` is required., mimeType: Path `mimeType` is required., userId: Path `userId` is required.\n    at Document.invalidate (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3362:32)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3123:17\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-10-10T14:30:16.121Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T14:35:59.083Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T14:35:59.136Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T14:36:22.230Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T14:36:22.294Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T14:36:47.640Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T14:36:47.682Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-10T14:36:51.415Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-10T14:36:51.417Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-10T14:36:51.431Z"}
+{"level":"info","message":"File Details: undefined, typeimage/png","service":"media-service","timestamp":"2025-10-10T14:36:51.432Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-10T14:36:51.433Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: pqbhd963rh0keg5rjeul","service":"media-service","timestamp":"2025-10-10T14:36:55.403Z"}
+{"_message":"Media validation failed","errors":{"originalName":{"kind":"required","message":"Path `originalName` is required.","name":"ValidatorError","path":"originalName","properties":{"message":"Path `originalName` is required.","path":"originalName","type":"required"}},"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"level":"error","message":"Error uploading media Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.","service":"media-service","stack":"ValidationError: Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.\n    at Document.invalidate (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3362:32)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3123:17\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-10-10T14:36:55.450Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-10T14:37:35.171Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-10T14:37:35.222Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-10T14:37:43.132Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-10T14:37:43.133Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-10T14:37:43.157Z"}
+{"level":"info","message":"File Details: undefined, typeimage/png","service":"media-service","timestamp":"2025-10-10T14:37:43.158Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-10T14:37:43.159Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: dchg3avv3klxlxcpwpwx","service":"media-service","timestamp":"2025-10-10T14:37:47.866Z"}
+{"_message":"Media validation failed","errors":{"originalName":{"kind":"required","message":"Path `originalName` is required.","name":"ValidatorError","path":"originalName","properties":{"message":"Path `originalName` is required.","path":"originalName","type":"required"}},"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"level":"error","message":"Error uploading media Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.","service":"media-service","stack":"ValidationError: Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.\n    at Document.invalidate (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3362:32)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3123:17\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-10-10T14:37:47.891Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:05:50.566Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:05:50.611Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T07:08:31.645Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T07:08:31.648Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T07:08:31.680Z"}
+{"level":"info","message":"File Details: undefined, typeimage/png","service":"media-service","timestamp":"2025-10-14T07:08:31.683Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T07:08:31.684Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: dhvp0sxr2izwpo9oytov","service":"media-service","timestamp":"2025-10-14T07:08:36.308Z"}
+{"_message":"Media validation failed","errors":{"originalName":{"kind":"required","message":"Path `originalName` is required.","name":"ValidatorError","path":"originalName","properties":{"message":"Path `originalName` is required.","path":"originalName","type":"required"}},"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"level":"error","message":"Error uploading media Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.","service":"media-service","stack":"ValidationError: Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.\n    at Document.invalidate (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3362:32)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3123:17\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-10-14T07:08:36.336Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:09:31.759Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:09:31.815Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:09:58.669Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:09:58.748Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T07:10:12.878Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T07:10:12.881Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T07:10:12.914Z"}
+{"level":"info","message":"File Details: undefined, typeimage/png","service":"media-service","timestamp":"2025-10-14T07:10:12.916Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T07:10:12.917Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: shkr38zdcrc5xa41vhu9","service":"media-service","timestamp":"2025-10-14T07:10:17.555Z"}
+{"_message":"Media validation failed","errors":{"originalName":{"kind":"required","message":"Path `originalName` is required.","name":"ValidatorError","path":"originalName","properties":{"message":"Path `originalName` is required.","path":"originalName","type":"required"}},"userId":{"kind":"required","message":"Path `userId` is required.","name":"ValidatorError","path":"userId","properties":{"message":"Path `userId` is required.","path":"userId","type":"required"}}},"level":"error","message":"Error uploading media Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.","service":"media-service","stack":"ValidationError: Media validation failed: originalName: Path `originalName` is required., userId: Path `userId` is required.\n    at Document.invalidate (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3362:32)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\document.js:3123:17\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\mongoose\\lib\\schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)","timestamp":"2025-10-14T07:10:17.616Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:13:03.575Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:13:03.624Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:13:16.477Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:13:16.624Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T07:13:22.361Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T07:13:22.363Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T07:13:22.391Z"}
+{"level":"info","message":"File Details: logo_me.png, typeimage/png","service":"media-service","timestamp":"2025-10-14T07:13:22.393Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T07:13:22.394Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: ae2g8j3kajyinjyxd6rn","service":"media-service","timestamp":"2025-10-14T07:13:27.096Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:34:22.306Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:34:22.325Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:54:17.619Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:54:17.639Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T07:54:41.759Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T07:54:41.778Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T08:15:32.973Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T08:15:32.998Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:21:16.689Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:21:16.728Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:21:35.147Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:21:35.226Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:21:47.307Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:21:47.348Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:22:37.520Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:22:37.560Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T09:24:04.551Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:24:04.553Z"}
+{"level":"error","message":"Error fetching medias res is not defined","service":"media-service","stack":"ReferenceError: res is not defined\n    at getAllMedias (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\controllers\\media-controller.js:49:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-10-14T09:24:04.600Z"}
+{"level":"error","message":"ReferenceError: res is not defined\n    at getAllMedias (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\controllers\\media-controller.js:52:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","service":"media-service","timestamp":"2025-10-14T09:24:04.602Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:24:21.394Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:24:21.453Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T09:24:24.921Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:24:24.924Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T09:25:44.139Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:25:44.142Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T09:25:44.196Z"}
+{"level":"info","message":"File Details: logo_me.png, typeimage/png","service":"media-service","timestamp":"2025-10-14T09:25:44.199Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T09:25:44.202Z"}
+{"level":"error","message":"Error uploading media uploadMediaTpCloudinary is not a function","service":"media-service","stack":"TypeError: uploadMediaTpCloudinary is not a function\n    at uploadMedia (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\controllers\\media-controller.js:22:29)\n    at Layer.handleRequest (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\router\\lib\\route.js:157:13)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\routes\\media-route.js:40:9\n    at done (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:59:7)\n    at indicateDone (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:63:68)\n    at Multipart.<anonymous> (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:187:7)\n    at Multipart.emit (node:events:520:28)\n    at emitCloseNT (node:internal/streams/destroy:148:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2025-10-14T09:25:44.208Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T09:25:53.603Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:25:53.605Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T09:25:53.623Z"}
+{"level":"info","message":"File Details: logo_me.png, typeimage/png","service":"media-service","timestamp":"2025-10-14T09:25:53.625Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T09:25:53.626Z"}
+{"level":"error","message":"Error uploading media uploadMediaTpCloudinary is not a function","service":"media-service","stack":"TypeError: uploadMediaTpCloudinary is not a function\n    at uploadMedia (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\controllers\\media-controller.js:22:29)\n    at Layer.handleRequest (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\router\\lib\\route.js:157:13)\n    at E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\routes\\media-route.js:40:9\n    at done (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:59:7)\n    at indicateDone (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:63:68)\n    at Multipart.<anonymous> (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:187:7)\n    at Multipart.emit (node:events:520:28)\n    at emitCloseNT (node:internal/streams/destroy:148:10)\n    at process.processTicksAndRejections (node:internal/process/task_queues:81:21)","timestamp":"2025-10-14T09:25:53.628Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:26:48.648Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:26:48.719Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T09:26:56.340Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:26:56.342Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T09:26:56.370Z"}
+{"level":"info","message":"File Details: logo_me.png, typeimage/png","service":"media-service","timestamp":"2025-10-14T09:26:56.371Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T09:26:56.371Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: utd2voycxa29vyczhy3s","service":"media-service","timestamp":"2025-10-14T09:27:01.455Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T09:27:20.330Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:27:20.334Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T09:38:59.743Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T09:38:59.745Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:41:43.575Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:41:43.628Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:42:52.151Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:42:52.207Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:46:36.835Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:46:36.936Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:48:15.607Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:48:15.648Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:49:33.618Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:49:33.658Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:49:40.818Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:49:40.859Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:51:18.408Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:51:25.592Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T09:51:25.658Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:51:25.665Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:52:54.597Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T09:52:54.676Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:52:54.681Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:54:03.982Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T09:54:04.053Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:54:04.060Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:55:25.844Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T09:55:25.910Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:55:25.916Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T09:55:36.028Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T09:55:36.112Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T09:55:36.230Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:30:47.880Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:30:47.955Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:30:47.974Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T16:34:13.676Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T16:34:13.677Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:44:24.123Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:44:24.191Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:44:24.216Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:44:26.125Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:44:26.200Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:44:26.215Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:44:36.081Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:44:36.146Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:44:36.157Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:45:56.307Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:45:56.368Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:45:56.380Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:46:04.241Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:46:04.308Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:46:04.320Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:46:38.164Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:46:38.237Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:46:38.257Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:46:41.629Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:46:41.695Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:46:41.712Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:49:49.647Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:49:49.701Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:49:49.711Z"}
+{"level":"info","message":"Received GET request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T16:51:15.517Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T16:51:15.518Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T16:51:52.817Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T16:51:52.818Z"}
+{"code":"LIMIT_UNEXPECTED_FILE","field":"file","level":"warn","message":"Unexpected field","name":"MulterError","service":"media-service","stack":"MulterError: Unexpected field\n    at wrappedFileFilter (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\index.js:40:19)\n    at Multipart.<anonymous> (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\multer\\lib\\make-middleware.js:132:7)\n    at Multipart.emit (node:events:520:28)\n    at HeaderParser.cb (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\busboy\\lib\\types\\multipart.js:358:14)\n    at HeaderParser.push (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\busboy\\lib\\types\\multipart.js:162:20)\n    at SBMH.ssCb [as _cb] (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\busboy\\lib\\types\\multipart.js:394:37)\n    at feed (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\streamsearch\\lib\\sbmh.js:248:10)\n    at SBMH.push (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\streamsearch\\lib\\sbmh.js:104:16)\n    at Multipart._write (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\busboy\\lib\\types\\multipart.js:567:19)\n    at writeOrBuffer (node:internal/streams/writable:564:12)","storageErrors":[],"timestamp":"2025-10-14T16:51:52.827Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T16:51:52.830Z"}
+{"level":"info","message":"File Details: icons8-android-50.png, typeimage/png","service":"media-service","timestamp":"2025-10-14T16:51:52.831Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T16:51:52.832Z"}
+{"level":"warn","message":"Error while uploading file to cloudinary","service":"media-service","timestamp":"2025-10-14T16:51:55.991Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":":","exception":{"http_code":400,"message":"Empty file","name":"Error"},"http_code":400,"level":"error","message":"Empty file","name":"Error","service":"media-service","timestamp":"2025-10-14T16:51:55.993Z"}
+{"http_code":400,"level":"error","message":"Empty file","name":"Error","service":"media-service","timestamp":"2025-10-14T16:51:55.994Z"}
+{"level":"error","message":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at ServerResponse.setHeader (node:_http_outgoing:703:11)\n    at ServerResponse.header (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\express\\lib\\response.js:684:10)\n    at ServerResponse.send (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\express\\lib\\response.js:161:12)\n    at ServerResponse.json (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\node_modules\\express\\lib\\response.js:250:15)\n    at uploadMedia (E:\\Node-Js Projects advance\\Node-Js\\projects\\SOCIAL-MEDIA-MICROSERVICES\\media-service\\src\\controllers\\media-controller.js:38:25)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","service":"media-service","timestamp":"2025-10-14T16:51:55.995Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-10-14T16:52:03.756Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T16:52:03.756Z"}
+{"level":"info","message":"Media Upload Started","service":"media-service","timestamp":"2025-10-14T16:52:03.758Z"}
+{"level":"info","message":"File Details: about.webp, typeimage/webp","service":"media-service","timestamp":"2025-10-14T16:52:03.758Z"}
+{"level":"info","message":"Uploading to cloudinary has been started","service":"media-service","timestamp":"2025-10-14T16:52:03.758Z"}
+{"level":"info","message":"Uploading to cloudinary has been successful: dqdj8u2fumccynscgacg","service":"media-service","timestamp":"2025-10-14T16:52:07.791Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T16:57:46.952Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T16:57:47.018Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T16:57:47.032Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T16:57:50.913Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T16:57:50.913Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T17:06:28.928Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T17:06:28.993Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T17:06:29.007Z"}
+{"level":"info","message":"Connected to MongoDB","service":"media-service","timestamp":"2025-10-14T17:06:42.894Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"media-service","timestamp":"2025-10-14T17:06:42.955Z"}
+{"level":"info","message":"Media Service running on port 3003","service":"media-service","timestamp":"2025-10-14T17:06:42.965Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-10-14T17:06:46.306Z"}
+{"level":"info","message":"Request Body:","service":"media-service","timestamp":"2025-10-14T17:06:46.306Z"}

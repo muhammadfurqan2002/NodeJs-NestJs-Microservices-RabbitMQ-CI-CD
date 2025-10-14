@@ -7,6 +7,7 @@ const helmet = require("helmet");
 const postRoutes = require("./routes/post-routes")
 const errorHandler = require('./middleware/errorHandler');
 const logger = require("./utils/logger");
+const { connectRabbitMQ } = require('./utils/rabbitmq');
 
 
 const app = express();
@@ -21,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI, {
     useUnifiedTopology: true,
 }).then(() => { logger.info("Connected to MongoDB"); }).catch((error) => { logger.error("MongoDB connection error:", error); process.exit(1); });
 
-const redisClient=new Redis(process.env.REDIS_URL);
+const redisClient = new Redis(process.env.REDIS_URL);
 
 app.use(helmet());
 app.use(cors());
@@ -38,23 +39,33 @@ app.use((req, res, next) => {
 
 
 
-app.use('/api/posts',(req,res,next)=>{
-    req.redisClient=redisClient
+app.use('/api/posts', (req, res, next) => {
+    req.redisClient = redisClient
     next()
-},postRoutes);
+}, postRoutes);
 
 
 app.use(errorHandler);
 
 
-app.listen(process.env.PORT, () => {
-    logger.info(`Identity Service running on port ${process.env.PORT}`);
-})
+async function startServer() {
+    try {
+        await connectRabbitMQ();
+        app.listen(process.env.PORT, () => {
+            logger.info(`Identity Service running on port ${process.env.PORT}`);
+        })
+    }catch(e){
+        logger.error("Failed to connect to server",e)
+        process.exit(1);
+    }
+}
+
+startServer();
 
 
 
 //  unhandled promise rejections handler
 
-process.on('unhandledRejection', (reason, promise) => { 
+process.on('unhandledRejection', (reason, promise) => {
     logger.error('Unhandled Rejection at:', promise, 'reason:', reason);
 })
