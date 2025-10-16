@@ -1,81 +1,55 @@
 # Node.js Projects Collection
 
-This repository contains a collection of Node.js projects and examples demonstrating various concepts, frameworks, and architectures. It includes basic Node.js demos, Express.js applications, Redis integrations, and a microservices-based social media platform.
+A concise collection of Node.js example projects and reference implementations for learning and experimentation. Includes core Node demos, an Express concept app, Redis examples, and a microservices sample (social-media).
 
-## Project Structure
+## Quick start
+1. Open the repo folder: e:\Node-Js Projects advance\Node-Js\projects  
+2. Explore folders: basic/, express-concept/, redis/, SOCIAL-MEDIA-MICROSERVICES/  
+3. Run examples per project (instructions below).
 
-### basic/
-Contains fundamental Node.js concepts and demos:
-- `buffer-demo.js`: Demonstrates Buffer usage for handling binary data, including allocation, creation from strings/arrays, writing, reading, slicing, and concatenation.
-- `event-loop.js`: Illustrates Node.js event loop phases with examples of timers, promises, nextTick, I/O callbacks, and crypto operations.
-- `stream-demo.js`: Shows stream usage including readable, writable, duplex, and transform streams, with a practical example of file compression and encryption.
-- `input.txt`: Sample input file for stream demos.
-- `output.text.gz.enc`: Encrypted and compressed output from stream demo.
+## Project layout
+- basic/  
+  - buffer-demo.js — Buffer API examples  
+  - event-loop.js — Event loop demonstration  
+  - stream-demo.js — Streams pipeline: read → gzip → encrypt → write  
+  - input.txt, output.text.gz.enc — sample files
 
-### express-concept/
-An Express.js application showcasing middleware and routing:
-- `server.js`: Main server file setting up Express app with middleware.
-- `config/corsConfig.js`: CORS configuration.
-- `middleware/`: Custom middleware including API versioning, custom middleware, error handling, and rate limiting.
-- `routes/item-routes.js`: Routes for item management.
-- Dependencies: Express, CORS, dotenv, express-rate-limit, nodemon.
+- express-concept/  
+  - server.js — Express app bootstrap  
+  - config/corsConfig.js — CORS helper  
+  - middleware/ — apiVersioning, customMiddleware, rateLimiting, errorHandler  
+  - routes/item-routes.js — example CRUD routes
 
-### redis/
-Redis integration examples and demos:
-- `data-structures.js`: Comprehensive demo of Redis data structures (strings, lists, sets, sorted sets, hashes).
-- `io-redis.js`: Simple example using ioredis client.
-- `pub-sub.js`: Publisher-subscriber pattern, pipelining, transactions, and batch operations.
-- `server.js`: Basic server implementation using Redis.
-- Dependencies: redis, ioredis.
+- redis/  
+  - data-structures.js — Redis data structures examples  
+  - io-redis.js — ioredis example  
+  - pub-sub.js — Pub/Sub and pipelines  
+  - server.js — example server using Redis
 
-### SOCIAL-MEDIA-MICROSERVICES/
-A microservices architecture for a social media platform:
+- SOCIAL-MEDIA-MICROSERVICES/  
+  - api-gateway/, identity-service/, post-service/, media-service/, search-service/  
+  - docker-compose.yml — local orchestration (MongoDB, Redis, RabbitMQ)  
+  - each service: src/, Dockerfile, package.json
 
-#### api-gateway/
-Acts as the entry point for the microservices:
-- `src/server.js`: Main gateway server with proxying, rate limiting, logging, and error handling.
-- `src/middleware/errorHandler.js`: Centralized error handling middleware.
-- `src/utils/logger.js`: Logging utility using Winston.
-- Dependencies: Express, CORS, helmet, express-rate-limit, express-http-proxy, ioredis, rate-limit-redis, winston, jsonwebtoken, dotenv.
-
-#### identity-service/
-Handles user authentication and identity management:
-- `src/server.js`: Main identity service server.
-- `src/controllers/identity-controller.js`: Controllers for auth operations.
-- `src/models/user.js` & `src/models/resfreshToken.js`: Mongoose models for users and refresh tokens.
-- `src/routes/identity-service.js`: Routes for registration, login, token refresh, etc.
-- `src/middleware/errorHandler.js`: Error handling middleware.
-- `src/utils/`: Utilities for token generation, logging, and validation.
-- Dependencies: Express, mongoose, jsonwebtoken, argon2, joi, cors, helmet, express-rate-limit, ioredis, rate-limit-redis, winston, dotenv.
-
-## Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-- Redis server (for redis and microservices projects)
-- MongoDB (for identity-service)
-
-## Installation and Running
-
-### Basic Demos
-```bash
-cd basic
+## How to run (examples)
+Basic demos:
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\basic"
 node buffer-demo.js
 node event-loop.js
 node stream-demo.js
 ```
 
-### Express Concept
-```bash
-cd express-concept
+Express concept:
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\express-concept"
 npm install
-npm run dev  # or npm start
+npm run dev
 ```
 
-### Redis Examples
-Ensure Redis server is running on localhost:6379
-```bash
-cd redis
+Redis examples (requires Redis on localhost:6379):
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\redis"
 npm install
 node data-structures.js
 node io-redis.js
@@ -83,47 +57,128 @@ node pub-sub.js
 node server.js
 ```
 
-### Social Media Microservices
-#### API Gateway
-```bash
-cd SOCIAL-MEDIA-MICROSERVICES/api-gateway
-npm install
-# Set up environment variables in .env (REDIS_URL, IDENTITY_SERVICE_URL, PORT)
-npm run dev
+Microservices (Docker Compose):
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\SOCIAL-MEDIA-MICROSERVICES"
+docker compose up --build
 ```
+Or run services individually: create a `.env` in each service, then `npm install` and `npm run dev`.
 
-#### Identity Service
-```bash
-cd SOCIAL-MEDIA-MICROSERVICES/identity-service
-npm install
-# Set up environment variables in .env (MONGODB_URI, JWT_SECRET, REDIS_URL, PORT)
-npm run dev
-```
+## Common environment variables (examples)
+- PORT  
+- MONGODB_URI  
+- JWT_SECRET  
+- REDIS_URL  
+- RABBITMQ_URL  
+- CLOUDINARY_URL (or CLOUDINARY_*)
 
-## Technologies Used
+Refer to each service's src/server.js for exact names.
 
-- **Node.js**: Runtime environment
-- **Express.js**: Web framework
-- **Redis**: In-memory data structure store
-- **MongoDB**: NoSQL database
-- **Mongoose**: MongoDB object modeling
-- **JWT**: JSON Web Tokens for authentication
-- **Argon2**: Password hashing
-- **Winston**: Logging library
-- **Helmet**: Security middleware
-- **CORS**: Cross-origin resource sharing
-- **Rate Limiting**: Request throttling
-- **Streams**: Data processing
-- **Buffers**: Binary data handling
+## Technologies used
+- Runtime: Node.js (v14+)  
+- Web: Express.js, CORS, Helmet  
+- Datastores/Brokers: Redis (node-redis, ioredis), MongoDB + Mongoose, RabbitMQ (amqplib)  
+- Auth & Security: jsonwebtoken (JWT), argon2, express-rate-limit, rate-limit-redis  
+- Streams & Utilities: stream, zlib, crypto, fs  
+- Logging & Validation: winston, joi  
+- Dev & Infra: nodemon, Docker, Docker Compose, GitHub Actions (examples)
 
 ## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+1. Fork the repository  
+2. Create a branch for your change  
+3. Commit and push changes  
+4. Open a pull request with a brief description
 
 ## License
+ISC
+```// filepath: e:\Node-Js Projects advance\Node-Js\projects\README.md
+# Node.js Projects Collection
 
-ISC License
+A concise collection of Node.js example projects and reference implementations for learning and experimentation. Includes core Node demos, an Express concept app, Redis examples, and a microservices sample (social-media).
+
+## Quick start
+1. Open the repo folder: e:\Node-Js Projects advance\Node-Js\projects  
+2. Explore folders: basic/, express-concept/, redis/, SOCIAL-MEDIA-MICROSERVICES/  
+3. Run examples per project (instructions below).
+
+## Project layout
+- basic/  
+  - buffer-demo.js — Buffer API examples  
+  - event-loop.js — Event loop demonstration  
+  - stream-demo.js — Streams pipeline: read → gzip → encrypt → write  
+  - input.txt, output.text.gz.enc — sample files
+
+- express-concept/  
+  - server.js — Express app bootstrap  
+  - config/corsConfig.js — CORS helper  
+  - middleware/ — apiVersioning, customMiddleware, rateLimiting, errorHandler  
+  - routes/item-routes.js — example CRUD routes
+
+- redis/  
+  - data-structures.js — Redis data structures examples  
+  - io-redis.js — ioredis example  
+  - pub-sub.js — Pub/Sub and pipelines  
+  - server.js — example server using Redis
+
+- SOCIAL-MEDIA-MICROSERVICES/  
+  - api-gateway/, identity-service/, post-service/, media-service/, search-service/  
+  - docker-compose.yml — local orchestration (MongoDB, Redis, RabbitMQ)  
+  - each service: src/, Dockerfile, package.json
+
+## How to run (examples)
+Basic demos:
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\basic"
+node buffer-demo.js
+node event-loop.js
+node stream-demo.js
+```
+
+Express concept:
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\express-concept"
+npm install
+npm run dev
+```
+
+Redis examples (requires Redis on localhost:6379):
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\redis"
+npm install
+node data-structures.js
+node io-redis.js
+node pub-sub.js
+node server.js
+```
+
+Microservices (Docker Compose):
+```powershell
+cd "e:\Node-Js Projects advance\Node-Js\projects\SOCIAL-MEDIA-MICROSERVICES"
+docker compose up --build
+```
+Or run services individually: create a `.env` in each service, then `npm install` and `npm run dev`.
+
+## Common environment variables (examples)
+- PORT  
+- MONGODB_URI  
+- JWT_SECRET  
+- REDIS_URL  
+- RABBITMQ_URL  
+- CLOUDINARY_URL (or CLOUDINARY_*)
+
+Refer to each service's src/server.js for exact names.
+
+## Technologies used
+- Runtime: Node.js (v14+)  
+- Web: Express.js, CORS, Helmet  
+- Datastores/Brokers: Redis (node-redis, ioredis), MongoDB + Mongoose, RabbitMQ (amqplib)  
+- Auth & Security: jsonwebtoken (JWT), argon2, express-rate-limit, rate-limit-redis  
+- Streams & Utilities: stream, zlib, crypto, fs  
+- Logging & Validation: winston, joi  
+- Dev & Infra: nodemon, Docker, Docker Compose, GitHub Actions
+
+## Contributing
+1. Fork the repository  
+2. Create a branch for your change  
+3. Commit and push changes  
+4. Open a pull request with a brief description
