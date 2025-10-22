@@ -1,1 +1,2 @@
 this is furqan
+docker exec -it express_prisma_api npx prisma generate
