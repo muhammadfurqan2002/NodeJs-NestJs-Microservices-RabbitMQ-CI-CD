@@ -15,7 +15,7 @@ export class FileUploadService {
   async uploadFile(file: Express.Multer.File) {
     try {
       const uploadResult = await this.uploadToCloudinary(file.path);
-      const newlySavedFile = await this.prisma.File.create({
+      const newlySavedFile = await this.prisma.file.create({
         data: {
           filename: file.originalname,
           publicId: uploadResult.public_id,
@@ -44,5 +44,23 @@ export class FileUploadService {
         // reject(error);
       });
     });
+  }
+  async delete(fileId: string) {
+    try {
+      const file = await this.prisma.file.findUnique({
+        where: { id: fileId },
+      });
+      if (!file) {
+        throw new Error('File not found');
+      }
+      await cloudinary.uploader.destroy(file.publicId);
+      await this.prisma.file.delete({
+        where: { id: fileId },
+      });
+    } catch (error) {
+      throw new InternalServerErrorException(
+        'File deletion failed! Please try again after sometimeF',
+      );
+    }
   }
 }
